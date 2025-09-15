@@ -18,7 +18,7 @@ cd lineage
 repo init --git-lfs --no-use-superproject --partial-clone -b lineage-22.2 -u https://github.com/LineageOS/android
 mkdir .repo/local_manifests
 cd .repo/local_manifests
-wget https://raw.githubusercontent.com/lge-sm8250-dev/manifest/refs/heads/staging/lineage-22.2/timelm.xml
+wget https://raw.githubusercontent.com/lge-timelm-dev/manifest/refs/heads/staging/lineage-22.2/timelm.xml
 cd -
 repo sync -c -j20 --force-sync
 repo sync -c -j1 --fail-fast
@@ -31,3 +31,4 @@ breakfast timelm
 
 # Build the code
 m bacon -j20
+
